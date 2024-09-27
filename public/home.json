@@ -1,0 +1,420 @@
+{
+  "section-1": {
+    "name": "herosection",
+    "div-s1d1": {
+      "css": "div-s1d1",
+      "style": {
+        "backgroundImage": "url(/background1.jpeg)"
+      },
+      "div-s1d1d1": {
+        "css": "div-s1d1d1"
+      },
+      "div-s1d1d2": {
+        "css": "div-s1d1d2",
+        "heading-s1d1d2h1": {
+          "type": "h1",
+          "css": "heading-s1d1d2h1",
+          "text": "Hi!! My name is Marta."
+        },
+        "div-s1d1d2d1": {
+          "css": "div-s1d1d2d1",
+          "paragraph-s1d1d2d1p1": {
+            "css": "paragraph-s1d1d2d1p1",
+            "text": "I am passionate about sports."
+          },
+          "paragraph-s1d1d2d1p2": {
+            "css": "paragraph-s1d1d2d1p2",
+            "text": "I believe that our body is a temple, and we must take care of it."
+          }
+        }
+      }
+    }
+  },
+  "section-2": {
+    "name": "aboutsection",
+    "div-s2d1": {
+      "css": "div-s2d1",
+      "div-s2d1d1": {
+        "css": "max-w-4xl mx-auto text-center px-4 py-12",
+        "heading-s2d1d1h1": {
+          "type": "h1",
+          "css": "text-4xl sm:text-5xl font-bold text-white leading-tight mb-8",
+          "text": "Empowering You to Unlock Your Full Potential"
+        },
+        "paragraph-s2d1d1p1": {
+          "css": "text-xl text-gray-300 mb-6 leading-relaxed",
+          "text": "My mission is to help people discover how they can get the most out of themselves in a healthy and sustainable way, ultimately improving their quality of life."
+        },
+        "div-s2d1d1d1": {
+          "css": "bg-white bg-opacity-10 rounded-lg p-6 mb-8",
+          "paragraph-s2d1d1d1p1": {
+            "css": "text-lg text-gray-200 italic",
+            "text": "“My life has revolved around sports since I was 5 years old, first as a gymnast and now as a coach. This journey has made me results-oriented and passionate about helping others achieve their goals.”"
+          }
+        },
+        "paragraph-s2d1d1p2": {
+          "css": "text-xl text-gray-300 mb-8",
+          "text": "If you're ready to train smart and transform your habits, now is the time!"
+        },
+        "div-s2d1d1d2": {
+          "css": "bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg p-6",
+          "heading-s2d1d1d2h1": {
+            "type": "h2",
+            "css": "text-2xl font-bold text-white mb-4",
+            "text": "What I Offer"
+          },
+          "ul-s2d1d1d2ul1": {
+            "type": "ul",
+            "css": "text-lg text-gray-200 list-disc list-inside",
+            "li-s2d1d1d2ul1li1": {
+              "type": "li",
+              "text": "Customized programs tailored to your needs"
+            },
+            "li-s2d1d1d2ul1li2": {
+              "type": "li",
+              "text": "Dedicated support throughout your journey"
+            },
+            "li-s2d1d1d2ul1li3": {
+              "type": "li",
+              "text": "Expert advice to help you achieve your health goals"
+            }
+          },
+          "paragraph-s2d1d1d2p1": {
+            "css": "text-xl font-semibold text-white mt-4",
+            "text": "Unlock your potential with personalized coaching and a supportive community."
+          }
+        },
+        "div-s2d1d1d3": {
+          "css": "mt-16 grid md:grid-cols-2 gap-8",
+          "div-s2d1d1d3d1": {
+            "css": "bg-white bg-opacity-10 rounded-lg p-6",
+            "heading-s2d1d1d3d1h1": {
+              "type": "h2",
+              "css": "text-3xl font-bold text-yellow-400 mb-6",
+              "text": "FOCUS AREAS"
+            },
+            "ul-s2d1d1d3d1ul1": {
+              "type": "ul",
+              "css": "text-lg text-gray-200 space-y-3",
+              "li-s2d1d1d3d1ul1li1": {
+                "type": "li",
+                "text": "🔄 Mobility & Flexibility Training"
+              },
+              "li-s2d1d1d3d1ul1li2": {
+                "type": "li",
+                "text": "💪 Strength & HIIT Training"
+              },
+              "li-s2d1d1d3d1ul1li3": {
+                "type": "li",
+                "text": "🤸‍♀️ Gymnastics"
+              },
+              "li-s2d1d1d3d1ul1li4": {
+                "type": "li",
+                "text": "️‍🏋️‍♂️ Functional Training"
+              },
+              "li-s2d1d1d3d1ul1li5": {
+                "type": "li",
+                "text": "📊 Body Composition"
+              },
+              "li-s2d1d1d3d1ul1li6": {
+                "type": "li",
+                "text": "🧘‍♂️ Mindfulness"
+              }
+            }
+          },
+          "div-s2d1d1d3d2": {
+            "css": "bg-white bg-opacity-10 rounded-lg p-6",
+            "heading-s2d1d1d3d2h2": {
+              "type": "h2",
+              "css": "text-3xl font-bold text-green-400 mb-6",
+              "text": "BACKGROUND"
+            },
+            "ul-s2d1d1d3d2ul1": {
+              "type": "ul",
+              "css": "text-lg text-gray-200 space-y-3",
+              "li-s2d1d1d3d2ul1li1": {
+                "type": "li",
+                "text": "✅ NASM Certified Personal Trainer"
+              },
+              "li-s2d1d1d3d2ul1li2": {
+                "type": "li",
+                "text": "✅ NASM Certified Nutrition Coach"
+              },
+              "li-s2d1d1d3d2ul1li3": {
+                "type": "li",
+                "text": "✅ CrossFit Coach Level 1"
+              },
+              "li-s2d1d1d3d2ul1li4": {
+                "type": "li",
+                "text": "️‍✅ Gymnastics Expertise"
+              }
+            }
+          }
+        },
+        "div-s2d1d1d4": {
+          "css": "mt-12",
+          "Link-s2d1d1d4link1": {
+            "href": "/contact",
+            "div-s2d1d1d4link1d1": {
+              "css": "bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold py-3 px-8 rounded-full text-xl hover:from-purple-700 hover:to-indigo-700 transition duration-300 cursor-pointer",
+              "paragraph-s2d1d1d4link1d1p1": {
+                "css": "",
+                "text": "Start Your Journey Today"
+              }
+            }
+          }
+        }
+      },
+      "div-s2d1d2": {
+        "css": "div-s2d1d2",
+        "heading-s2d1d2h1": {
+          "type": "h1",
+          "css": "heading-s2d1d2h1",
+          "text": "I use a 5 step guide to Goal Setting"
+        },
+        "heading-s2d1d2h2": {
+          "type":"h1",
+          "css": "heading-s2d1d2h2",
+          "text": "S.M.A.R.T"
+        },
+        "div-s2d1d2d1": {
+          "css": "div-s2d1d2d1",
+          "div-s2d1d2d1d1": {
+            "css": "div-s2d1d2d1d1",
+            "style": {
+              "backgroundImage": "url('/card1-bg.jpg')",
+              "backgroundSize": "cover"
+            },
+            "heading-s2d1d2d1d1h1": {
+              "type": "h2",
+              "css": "heading-s2d1d2d1d1h1",
+              "text": "SPECIFIC"
+            },
+            "paragraph-s2d1d2d1d1p1": {
+              "css": "paragraph-s2d1d2d1d1p1",
+              "text": "Goals should be concrete (specific)"
+            }
+          },
+          "div-s2d1d2d1d2": {
+            "css": "div-s2d1d2d1d2",
+            "style": {
+              "backgroundImage": "url('/card2-bg.jpg')",
+              "backgroundSize": "cover"
+            },
+            "heading-s2d1d2d1d2h1": {
+              "type": "h2",
+              "css": "heading-s2d1d2d1d2h1",
+              "text": "MEASURABLE"
+            },
+            "paragraph-s2d1d2d1d2p1": {
+              "css": "paragraph-s2d1d2d1d2p1",
+              "text": "We should be able to calculate your progress in weight, inches, strength and other variables."
+            }
+          },
+          "div-s2d1d2d1d3": {
+            "css": "div-s2d1d2d1d3",
+            "style": {
+              "backgroundImage": "url('/card3-bg.jpg')",
+              "backgroundSize": "cover"
+            },
+            "heading-s2d1d2d1d3h1": {
+              "type": "h2",
+              "css": "heading-s2d1d2d1d3h1",
+              "text": "ACHIEVABLE"
+            },
+            "paragraph-s2d1d2d1d3p1": {
+              "css": "paragraph-s2d1d2d1d3p1",
+              "text": "Goals should be attainable, must be possible for you to accomplish it."
+            }
+          },
+          "div-s2d1d2d1d4": {
+            "css": "div-s2d1d2d1d4",
+            "style": {
+              "backgroundImage": "url('/card4-bg.jpg')",
+              "backgroundSize": "cover"
+            },
+            "heading-s2d1d2d1d4h1": {
+              "type": "h2",
+              "css": "heading-s2d1d2d1d4h1",
+              "text": "REALISTIC"
+            },
+            "paragraph-s2d1d2d1d4p1": {
+              "css": "paragraph-s2d1d2d1d4p1",
+              "text": "Goals should be based upon your level of motivation and physical abilities."
+            }
+          },
+          "div-s2d1d2d1d5": {
+            "css": "div-s2d1d2d1d5",
+            "style": {
+              "backgroundImage": "url('/card5-bg.jpg')",
+              "backgroundSize": "cover"
+            },
+            "heading-s2d1d2d1d5h1": {
+              "type": "h2",
+              "css": "heading-s2d1d2d1d5h1",
+              "text": "TIME ORIENTED"
+            },
+            "paragraph-s2d1d2d1d5p1": {
+              "css": "paragraph-s2d1d2d1d5p1",
+              "text": "Goals should be attainable within a time frame. (Short, Long or both)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "section-3": {
+    "name": "stories",
+    "div-s3d1": {
+      "css": "div-s3d1",
+      "hr-s3d1hr1": {
+        "css": "hr-s3d1hr1"
+      },
+      "div-s3d1d1": {
+        "css": "div-s3d1d1",
+        "heading-s3d1d1h1": {
+          "type": "h2",
+          "css": "heading-s3d1d1h1",
+          "text": "Real Stories, Real Results"
+        },
+        "div-s3d1d1d1": {
+          "css" : "div-s3d1d1d1",
+          "a-s3d1d1d1a1": {
+            "css": "a-s3d1d1d1a1",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "href": "https://www.linkedin.com/in/guillermo-hdz",
+            "Image-s3d1d1d1a1img1": {
+              "src": "/generic_person_icon_2.jpg",
+              "width": 200,
+              "height": 200,
+              "alt": "Guillermo Hernandez",
+              "css": "Image-s3d1d1d1a1img1"
+            },
+            "heading-s3d1d1d1a1h1": {
+              "type": "h3",
+              "css": "heading-s3d1d1d1a1h1",
+              "text": "Guillermo Hernandez"
+            },
+            "paragraph-s3d1d1d1a1p1": {
+              "css": "paragraph-s3d1d1d1a1p1",
+              "text": "View LinkedIn Review"
+            }
+          },
+          "a-s3d1d1d1a2": {
+            "css": "a-s3d1d1d1a2",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "href": "https://www.linkedin.com/in/belitrodriguez",
+            "Image-s3d1d1d1a2img1": {
+              "src": "/generic_person_icon_2.jpg",
+              "width": 200,
+              "height": 200,
+              "alt": "Belit Rodriguez",
+              "css": "Image-s3d1d1d1a2img1"
+            },
+            "heading-s3d1d1d1a2h1": {
+              "type": "h3",
+              "css": "heading-s3d1d1d1a2h1",
+              "text": "Belit Rodriguez"
+            },
+            "paragraph-s3d1d1d1a2p1": {
+              "css": "paragraph-s3d1d1d1a2p1",
+              "text": "View LinkedIn Review"
+            }
+          },
+          "a-s3d1d1d1a3": {
+            "css": "a-s3d1d1d1a3",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "href": "https://www.linkedin.com/in/antonieta-pinto-rebelo-898155151",
+            "Image-s3d1d1d1a3img1": {
+              "src": "/generic_person_icon_2.jpg",
+              "width": 200,
+              "height": 200,
+              "alt": "Antonieta Pinto Rebelo",
+              "css": "Image-s3d1d1d1a3img1"
+            },
+            "heading-s3d1d1d1a3h1": {
+              "type": "h3",
+              "css": "heading-s3d1d1d1a3h1",
+              "text": "Antonieta Pinto Rebelo"
+            },
+            "paragraph-s3d1d1d1a3p1": {
+              "css": "paragraph-s3d1d1d1a3p1",
+              "text": "View LinkedIn Review"
+            }
+          },
+          "a-s3d1d1d1a4": {
+            "css": "a-s3d1d1d1a4",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "href": "https://www.linkedin.com/in/rombout-frieling-117a1411",
+            "Image-s3d1d1d1a4img1": {
+              "src": "/generic_person_icon_2.jpg",
+              "width": 200,
+              "height": 200,
+              "alt": "Rombout Frieling",
+              "css": "Image-s3d1d1d1a4img1"
+            },
+            "heading-s3d1d1d1a4h1": {
+              "type": "h3",
+              "css": "heading-s3d1d1d1a4h1",
+              "text": "Rombout Frieling"
+            },
+            "paragraph-s3d1d1d1a4p1": {
+              "css": "paragraph-s3d1d1d1a4p1",
+              "text": "View LinkedIn Review"
+            }
+          },
+          "a-s3d1d1d1a5": {
+            "css": "a-s3d1d1d1a5",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "href": "https://www.linkedin.com/in/ivelin-aleksandrov-ivanov",
+            "Image-s3d1d1d1a5img1": {
+              "src": "/generic_person_icon_2.jpg",
+              "width": 200,
+              "height": 200,
+              "alt": "Ivelin Aleksandrov Ivanov",
+              "css": "Image-s3d1d1d1a5img1"
+            },
+            "heading-s3d1d1d1a5h1": {
+              "type": "h3",
+              "css": "heading-s3d1d1d1a5h1",
+              "text": "Ivelin Aleksandrov Ivanov"
+            },
+            "paragraph-s3d1d1d1a5p1": {
+              "css": "paragraph-s3d1d1d1a5p1",
+              "text": "View LinkedIn Review"
+            }
+          },
+          "a-s3d1d1d1a6": {
+            "css": "a-s3d1d1d1a6",
+            "target": "_blank",
+            "rel": "noopener noreferrer",
+            "href": "https://www.linkedin.com/in/martijn-schipperen",
+            "Image-s3d1d1d1a6img1": {
+              "src": "/generic_person_icon_2.jpg",
+              "width": 200,
+              "height": 200,
+              "alt": "Martijn Schipperen",
+              "css": "Image-s3d1d1d1a6img1"
+            },
+            "heading-s3d1d1d1a6h1": {
+              "type": "h3",
+              "css": "heading-s3d1d1d1a6h1",
+              "text": "Martijn Schipperen"
+            },
+            "paragraph-s3d1d1d1a6p1": {
+              "css": "paragraph-s3d1d1d1a6p1",
+              "text": "View LinkedIn Review"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

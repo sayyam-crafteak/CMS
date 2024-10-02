@@ -16,7 +16,7 @@
 }
 
 #heading-s1d1d2h1{
-    @apply sm:text-6xl text-4xl font-bold text-center text-white 
+    @apply sm:text-6xl text-4xl font-bold text-center text-white bg-transparent
 }
 
 #div-s1d1d2d1{

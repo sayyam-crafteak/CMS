@@ -648,7 +648,7 @@ import { FaEye } from "react-icons/fa";
 
 const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
   // console.log("\n value : ", value);
-  // console.log("\n css styles : ", styles);
+ // console.log("\n css styles : ", styles);
   const [sidebarWidth, setSidebarWidth] = useState(400); // initial width for desktop
   const [isResizing, setIsResizing] = useState(false);
   
@@ -678,13 +678,13 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
       fontFamily: 'Arial',
       fontStyle: 'normal',
       textDecoration: 'none',
-      color: '#000000',
+      textColor: '#000000',
       backgroundColor: '#ffffff',
     },
     ...value,
   });
 
-// here, we two different hooks because if we put the side resizing in other hoook it is affecting the current states of stored value fo form fields.
+// here, we used two different hooks because if we put the side resizing in other hoook it is affecting the current states of stored value fo form fields.
   useEffect(() => {
     if (show) {
       document.body.style.overflow = 'hidden';
@@ -810,7 +810,7 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
               <FaArrowLeft className="text-xl" />
             </button>
           </Tooltip>
-          <h2 className="text-lg font-semibold">Edit Element</h2>
+          <h2 className="text-lg font-semibold select-none">Edit Element</h2>
         </div>
         {/* Preview Section */}
         <div className="flex-shrink-0">
@@ -848,7 +848,7 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
           <form className="" onSubmit={handleSubmit}>
             <Accordion selectionMode="multiple" variant="bordered" itemClasses={itemClasses}>
               {/* Text Content Accordion */}
-              <AccordionItem key="1" title="Text Content" className='px-0'>
+              <AccordionItem key="1" title="Text Content" className='px-0 select-none'>
                 <div className="">
                   <textarea
                     id="text"
@@ -862,7 +862,7 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
 
               <AccordionItem key="2" title="Font Family" className='px-0'>
                 <Autocomplete
-                  label={<span className="text-white opacity-90">Font Family</span>}
+                  label={<span className="text-white opacity-90 select-none">Font Family</span>}
                   placeholder="Select or search font family"
                   variant="bordered"
                   color="secondary"
@@ -884,10 +884,10 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
               </AccordionItem>
 
               {/* Text Styling Accordion */}
-              <AccordionItem key="3" title="Text Styling" className='px-0'>
+              <AccordionItem key="3" title="Text Styling" className='px-0 select-none'>
                 <div className="mb-6">
                   <div className="flex justify-between mb-4 py-1">
-                    <label className={`mr-4 ${isFontStyleItalic() ? 'text-white' : 'opacity-60'}`}>
+                    <label className={`mr-4 select-none ${isFontStyleItalic() ? 'text-white' : 'opacity-60'}`}>
                       Italic
                     </label>
                     <Switch
@@ -899,7 +899,7 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
                   </div>
 
                   <div className="flex justify-between mb-4 py-1" >
-                    <label className={`mr-4 ${isTextUnderlined() ? 'text-white' : 'opacity-60'}`}>
+                    <label className={`mr-4 select-none ${isTextUnderlined() ? 'text-white' : 'opacity-60'}`}>
                       Underline
                     </label>
                     <Switch
@@ -941,7 +941,7 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
                   </div>
                   
                   <div className="flex justify-between mb-2 py-1">
-                    <label htmlFor="style.color" className="block">Text Color</label>
+                    <label htmlFor="style.color" className="block select-none">Text Color</label>
                     <Popover placement="left" showArrow={true}>
                       <PopoverTrigger>
                         <Button
@@ -954,8 +954,8 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
                       <PopoverContent className='bg-transparent p-0'>
                         <SketchPicker
                           className="text-black"
-                          color={formData.style.color}
-                          onChange={(color) => handleColorChange(color, 'color')}
+                          color={formData.style.textColor}
+                          onChange={(color) => handleColorChange(color, 'textColor')}
                         />
                       </PopoverContent>
                     </Popover>
@@ -964,7 +964,7 @@ const EditSidebar = ({ show, onClose, onSave, value, styles }: any) => {
               </AccordionItem>
 
               {/* Background Accordion */}
-              <AccordionItem key="4" title="Background Styling" className='px-0'>
+              <AccordionItem key="4" title="Background Styling" className='px-0 select-none'>
                 <div>
                   <div className="flex justify-between py-1 ">
                     <label htmlFor="style.backgroundColor" className="block mb-2">Background Color</label>

@@ -6,7 +6,10 @@
 import React, { useState, useEffect } from 'react';
 import { generateHTML } from '@/utils/scripts/generate-page';
 import EditSidebar from '../components/home-page/EditSidebar';
+import { convertStylesToTailwind } from '@/utils/convertStylesToTailwind';
 import '../styles/home.css';
+import { updateCSSFile } from '@/utils/updateCSS';
+import path from 'path';
 
 const HomePage = () => {
   const [data, setData] = useState<any>({});
@@ -16,6 +19,7 @@ const HomePage = () => {
   const [showModal, setShowModal] = useState(false);
   const [modalKey, setModalKey] = useState(0); // Unique key for modal
   const [cssStyles, setCssStyles] = useState<any>(null); // To store extracted CSS styles
+  const [existingStyles, setExistingStyles] = useState<any>({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -71,8 +75,20 @@ const HomePage = () => {
       fontStyle: computedStyles.fontStyle || false,
       fontFamily: computedStyles.fontFamily || '',
     };
-
     console.log("\n Extracted CSS styles:", extractedStyles);
+
+    const general_styles = {
+      fontSize: computedStyles.fontSize || '',
+      fontWeight: computedStyles.fontWeight || '',
+      fontStyle: computedStyles.fontStyle || false,
+      textDecoration: computedStyles.textDecoration.split(" ")[0] || '',
+      backgroundColor: computedStyles.backgroundColor.replace(/\s/g, '') || '',
+      textColor: computedStyles.color.replace(/\s/g, '') || 'white',
+    }
+    //console.log("\n demo : ", general_styles);
+    const existing_styles = convertStylesToTailwind(general_styles);
+    console.log("\n existing styles : ", existing_styles);
+    setExistingStyles(existing_styles);
     return extractedStyles;
   };
 
@@ -117,8 +133,11 @@ const HomePage = () => {
   };
 
   // Handle save from modal
-  const handleSave = (updatedElement: any) => {
+  const handleSave = async (updatedElement: any) => {
    console.log("\n updatedElement.style : ", updatedElement.style); 
+   const updated_styles = convertStylesToTailwind(updatedElement.style);
+   console.log("\n updated_styles : ", updated_styles);
+   
    const { key } = modalData;
     let tempData = { ...updatedData };
 
@@ -143,6 +162,35 @@ const HomePage = () => {
     if (updated) {
       setUpdatedData(tempData);
       setShowModal(false);
+
+      // const cssFilePath = path.resolve('cms', 'src/app/styles/home.css');
+      // console.log("\n key : ", key);
+      // updateCSSFile(cssFilePath, key, existingStyles, updated_styles);
+
+      try {
+        const response = await fetch('/api/css/updateCss', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                elementId: key,
+                existingStyles,
+                updatedStyles: updated_styles,
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error updating CSS file: ${response.statusText}`);
+        }
+
+        const result = await response.json();
+        console.log('API Response:', result);
+
+    } catch (error) {
+        console.error('Failed to update CSS file:', error);
+    }
+
     } else {
       console.error(`Key ${key} not found in updatedData`);
     }

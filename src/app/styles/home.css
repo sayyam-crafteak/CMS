@@ -69,20 +69,20 @@
 }
 
 #ul-s2d1d1d2ul1{
-    @apply text-lg text-gray-200 list-disc list-inside
+    @apply  list-disc list-inside
 }
 
-/* #li-s2d1d1d2ul1li1{
-    @apply 
+#li-s2d1d1d2ul1li1{
+    @apply text-lg text-gray-200
 }
 
 #li-s2d1d1d2ul1li2{
-    @apply 
+    @apply text-lg text-gray-200
 }
 
 #li-s2d1d1d2ul1li3{
-    @apply 
-} */
+    @apply text-lg text-gray-200
+}
 
 #paragraph-s2d1d1d2p1{
     @apply text-xl font-semibold text-white mt-4
@@ -101,32 +101,32 @@
 }
 
 #ul-s2d1d1d3d1ul1{
-    @apply text-lg text-gray-200 space-y-3
+    @apply space-y-3
 }
 
-/* #li-s2d1d1d3d1ul1li1{
-
+#li-s2d1d1d3d1ul1li1{
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d1ul1li2{
-
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d1ul1li3{
-
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d1ul1li4{
-
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d1ul1li5{
-
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d1ul1li6{
-
-} */
+    @apply text-lg text-gray-200 
+}
 
 #div-s2d1d1d3d2{
     @apply bg-white bg-opacity-10 rounded-lg p-6
@@ -140,21 +140,21 @@
     @apply text-lg text-gray-200 space-y-3
 }
 
-/* #li-s2d1d1d3d2ul1li1{
-
+#li-s2d1d1d3d2ul1li1{
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d2ul1li2{
-
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d2ul1li3{
-
+    @apply text-lg text-gray-200 
 }
 
 #li-s2d1d1d3d2ul1li4{
-
-} */
+    @apply text-lg text-gray-200 
+}
 
 #div-s2d1d1d4{
     @apply mt-12

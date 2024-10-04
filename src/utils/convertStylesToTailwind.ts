@@ -48,7 +48,7 @@ export const convertStylesToTailwind = (general_styles: any) => {
   // Convert fontStyle to Tailwind class
   if (general_styles.fontStyle) {
     if (general_styles.fontStyle === 'normal'){
-      tailwindStyles.fontStyle = 'non-italic';
+      tailwindStyles.fontStyle = 'not-italic';
     }else{
       tailwindStyles.fontStyle = 'italic';
     }

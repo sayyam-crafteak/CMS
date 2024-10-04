@@ -8,8 +8,6 @@ import { generateHTML } from '@/utils/scripts/generate-page';
 import EditSidebar from '../components/home-page/EditSidebar';
 import { convertStylesToTailwind } from '@/utils/convertStylesToTailwind';
 import '../styles/home.css';
-import { updateCSSFile } from '@/utils/updateCSS';
-import path from 'path';
 
 const HomePage = () => {
   const [data, setData] = useState<any>({});
@@ -26,7 +24,7 @@ const HomePage = () => {
       try {
         const response = await fetch('/api/json/read');
         const result = await response.json();
-        console.log("\n result: " ,result);
+        //console.log("\n result: " ,result);
         setData(result);
         setUpdatedData(result);
       } catch (error) {
@@ -37,20 +35,20 @@ const HomePage = () => {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    console.log("\n setData : ", data);
-  }, [data]);
+  // useEffect(() => {
+  //   console.log("\n setData : ", data);
+  // }, [data]);
 
-  useEffect(() => {
-    console.log("\n updated data : ", updatedData);
-  }, [updatedData]);
+  // useEffect(() => {
+  //   console.log("\n updated data : ", updatedData);
+  // }, [updatedData]);
 
   useEffect(() => {
     if (isEditMode) {
       // Add click event listeners to editable elements
       document.querySelectorAll('[id^="heading-"], [id^="paragraph-"]').forEach((element) => {
         element.addEventListener('click', handleClick);
-      });
+      });      
     }
 
     return () => {
@@ -85,6 +83,7 @@ const HomePage = () => {
       backgroundColor: computedStyles.backgroundColor.replace(/\s/g, '') || '',
       textColor: computedStyles.color.replace(/\s/g, '') || 'white',
     }
+
     //console.log("\n demo : ", general_styles);
     const existing_styles = convertStylesToTailwind(general_styles);
     console.log("\n existing styles : ", existing_styles);
@@ -118,8 +117,8 @@ const HomePage = () => {
       console.log("\n temp : ", temp);
       
       // Extract CSS styles using the helper function
-      const extractedStyles = extractCssStyles(id);
-      setCssStyles(extractedStyles);
+       const extractedStyles = extractCssStyles(id);
+       setCssStyles(extractedStyles);
 
       setModalData({ key: id, value: temp });
       setShowModal(false); // Close the modal first
@@ -162,10 +161,19 @@ const HomePage = () => {
     if (updated) {
       setUpdatedData(tempData);
       setShowModal(false);
+      
+      const isMobileDevice = () => {
+        return window.innerWidth <= 768; // Common breakpoint for mobile
+      };
 
-      // const cssFilePath = path.resolve('cms', 'src/app/styles/home.css');
-      // console.log("\n key : ", key);
-      // updateCSSFile(cssFilePath, key, existingStyles, updated_styles);
+      let view;
+      if (isMobileDevice()) {
+        view = 'mobile';
+        // console.log("User is using a mobile device");
+      } else {
+        view = 'desktop';
+        // console.log("User is using a desktop device");
+      }
 
       try {
         const response = await fetch('/api/css/updateCss', {
@@ -177,6 +185,7 @@ const HomePage = () => {
                 elementId: key,
                 existingStyles,
                 updatedStyles: updated_styles,
+                view,
             }),
         });
 
